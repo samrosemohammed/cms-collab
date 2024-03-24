@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="genreal.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header flex justify-between items-center md:px-40 p-12">
+      <a class="brand-link" href="#"
+        ><img
+          class="brand-img"
+          src="img/brand-logo.png"
+          alt="Brand Logo called myClassroom"
+      /></a>
+
+      <nav class="main-nav">
+        <ul class="main-lists flex gap-[2vw] list-none">
+          <li>
+            <a
+              class="main-list-link text-[18px] text-slate-400 hover:underline hover:decoration-green-400 hover:underline-offset-4 transition ease-in duration-700"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-list-link text-[18px] text-slate-400 hover:underline hover:decoration-green-400 hover:underline-offset-4 transition ease-in duration-700"
+              href="#"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-list-link text-[18px] text-slate-400 hover:underline hover:decoration-green-400 hover:underline-offset-4 transition ease-in duration-700"
+              href="#"
+              >Contact</a
+            >
+          </li>
+          <li class="login-registerz">
+            <a
+              class="main-list-link text-[18px] text-slate-300 px-6 py-2 border-solid border-2 border-slate-400 rounded-full"
+              href="login.html"
+              >Login</a
+            >
+            <a
+              class="main-list-link text-[18px] text-slate-300 px-6 py-2 border-solid border-2 border-transparent bg-green-800 rounded-full ml-6"
+              href="#"
+              >Register</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn btn-icon md:hidden">
+        <ion-icon class="icon-open w-16 h-16" name="menu-outline"></ion-icon>
+        <ion-icon
+          class="icon-close w-16 h-16 hidden"
+          name="close-outline"
+        ></ion-icon>
+      </button>
+    </header>
+  </body>
 </html>
