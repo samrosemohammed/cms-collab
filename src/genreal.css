@@ -11,6 +11,7 @@ html {
   /* 10px / 16px = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,5 +20,5 @@ body {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   background-color: #000;
-  overflow: hidden;
+  overflow-x: hidden;
 }

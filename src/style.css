@@ -21,9 +21,9 @@
     transform: translateX(100%);
   }
 
-  .main-nav a {
+  /* .main-nav a {
     font-size: 2rem;
-  }
+  } */
 
   .nav-open .main-nav {
     opacity: 1;
