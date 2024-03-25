@@ -19,6 +19,7 @@ body {
   line-height: 1;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  background-color: #000;
+  background-color: #1e1e1e;
+  /* Only work if there nothing absoluting positioned in relation to body */
   overflow-x: hidden;
 }
