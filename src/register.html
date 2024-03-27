@@ -22,144 +22,9 @@
     ></script>
 
     <script defer src="script.js"></script>
-
     <title>Document</title>
   </head>
   <body>
-    <!-- <header class="header flex justify-between items-center md:px-40 p-12">
-      <a class="brand-link" href="#"
-        ><img
-          class="brand-img"
-          src="img/brand-logo.png"
-          alt="Brand Logo called myClassroom"
-      /></a>
-
-      <nav class="main-nav">
-        <ul class="main-lists flex gap-[2vw] list-none">
-          <li>
-            <a
-              class="main-list-link text-[18px] text-slate-400 hover:underline hover:decoration-green-400 hover:underline-offset-4 transition ease-in duration-700"
-              href="#"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-list-link text-[18px] text-slate-400 hover:underline hover:decoration-green-400 hover:underline-offset-4 transition ease-in duration-700"
-              href="#"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-list-link text-[18px] text-slate-400 hover:underline hover:decoration-green-400 hover:underline-offset-4 transition ease-in duration-700"
-              href="#"
-              >Contact</a
-            >
-          </li>
-          <li class="login-register">
-            <a
-              class="inline-block main-list-link text-[18px] text-slate-300 px-6 py-2 border-solid border-2 border-slate-400 rounded-full"
-              href="login.html"
-              >Login</a
-            >
-            <a
-              class="inline-block main-list-link text-[18px] text-slate-300 px-6 py-2 border-solid border-2 border-transparent bg-green-800 rounded-full ml-6"
-              href="register.html"
-              >Register</a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <button class="btn btn-icon md:hidden">
-        <ion-icon class="icon-open w-16 h-16" name="menu-outline"></ion-icon>
-        <ion-icon
-          class="icon-close w-16 h-16 hidden"
-          name="close-outline"
-        ></ion-icon>
-      </button>
-    </header>
-
-   
-    <section class="hidden login-section flex items-center justify-center">
-      <div class="max-w-md w-full p-8">
-        <a href="#">
-          <img class="w-40 mx-auto" src="img/brand-logo.png" alt="Brand logo" />
-        </a>
-        <div
-          class="text-slate-400 login-bg placeholder-gray-400 mt-8 p-8 rounded-lg"
-        >
-          <h1
-            class="text-[18px] font-semibold leading-tight tracking-tight mb-6 text-center"
-          >
-            Sign in to your account
-          </h1>
-          <form class="">
-            <div class="mb-4">
-              <label for="email" class="block mb-2 text-[12px] font-medium"
-                >Your email</label
-              >
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="bg-gray-50 dark:bg-gray-700 rounded block w-full px-1.5 py-2"
-                placeholder="name@company.com"
-                required=""
-              />
-            </div>
-            <div class="mb-6">
-              <label for="password" class="block mb-2 text-[12px] font-medium"
-                >Password</label
-              >
-              <input
-                type="password"
-                name="password"
-                id="password"
-                class="bg-gray-50 dark:bg-gray-700 px-1.5 py-2 rounded block w-full"
-                placeholder="**********"
-                required=""
-              />
-            </div>
-
-            <div class="flex justify-between mb-6">
-              <div class="flex items-center">
-                <input
-                  id="remember"
-                  aria-describedby="remember"
-                  type="checkbox"
-                  class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                  required=""
-                />
-                <label for="remember" class="ml-2 tracking-tight"
-                  >Remember me</label
-                >
-              </div>
-              <a
-                href="#"
-                class="tracking-tight hover:underline hover:underline-offset-2"
-                >Forgot password?</a
-              >
-            </div>
-            <a
-              href="#"
-              class="block hover:bg-green-800 transition ease-in bg-green-900 px-4 py-2 text-slate-400 font-semibold text-center"
-              >Sign in</a
-            >
-            <div class="mt-6 text-center">
-              <span class="tracking-wide"
-                >Don't Have an account yet ?
-                <span class="underline underline-offset-2 cursor-pointer"
-                  >Sign Up</span
-                ></span
-              >
-            </div>
-          </form>
-        </div>
-      </div>
-    </section> -->
-
     <section class="bg-gray-50 dark:bg-gray-900">
       <div
         class="flex flex-col items-center justify-center px-6 py-8 mx-auto h-screen lg:py-0"
@@ -206,6 +71,24 @@
                   placeholder="name@company.com"
                   required=""
                 />
+              </div>
+              <div>
+                <label
+                  for="type"
+                  class="block mb-2 text-[10px] md:text-[12px] font-medium text-gray-900 dark:text-white"
+                  >User Type</label
+                >
+                <select
+                  name="type"
+                  id="type"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm md:text-lg rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required=""
+                >
+                  <!-- <option value="" disabled selected>Select an email</option> -->
+                  <option value="Student">Student</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Admin">Admin</option>
+                </select>
               </div>
               <div>
                 <label
